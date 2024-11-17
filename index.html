@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ProgWeb Midterm Exam</h1>
+      <form name="participation">
+        <input name="name" type="text" placeholder="name" />
+        <input name="age" type="number" placeholder="age" />
+        <select name="role">
+          <option value="Employee">Employee</option>
+          <option value="Volunteer">Volunteer</option>
+          <option value="Audience">Audience</option>
+        </select>
+        <button>submit</button>
+      </form>
+    </header>
+
+    <main>
+      <div class="card" data-role="Employee">
+        <div class="card--delete"></div>
+        <p class="card--role">Employee</p>
+        <p class="card--name">Anna Anderson</p>
+        <p class="card--age">24 years old</p>
+      </div>
+
+      <div class="card" data-role="Volunteer">
+        <div class="card--delete"></div>
+        <p class="card--role">Volunteer</p>
+        <p class="card--name">Bijan Bell</p>
+        <p class="card--age">24 years old</p>
+      </div>
+
+      <div class="card" data-role="Audience">
+        <div class="card--delete"></div>
+        <p class="card--role">Audience</p>
+        <p class="card--name">Daniel Dunn</p>
+        <p class="card--age">24 years old</p>
+      </div>
+    </main>
+    <aside>
+      <div class="summary">
+        <p class="summary--participants">Participants: 3</p>
+        <p class="summary--average">Average age: 3</p>
+      </div>
+    </aside>
+    <script src="app.js"></script>
+  </body>
+</html>
